@@ -5,3 +5,18 @@
 td {
     padding: 5px 5px 5px 5px;
 } */
+
+#op .card-form {
+    opacity: 0.5;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }

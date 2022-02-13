@@ -1,8 +1,8 @@
 let isSubscribed = true;
 
-function addFamilyMember() {
-  alert("Please contact us to add a new member in your Family Plan!");
-}
+// function addFamilyMember() {
+//   alert("Please contact us to add a new member in your Family Plan!");
+// }
 
 function logout() {
   // alert(
