@@ -1,287 +1,647 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<main role="main">
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			<meta name="description" content="Badger Bank">
-			<meta name="author" content="Cole Nelson, Ilkyu Ju, Sujitha Perumal">
-			<!-- Bootstrap CSS -->
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <main role="main">
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta name="description" content="Badger Bank" />
+      <meta name="author" content="Cole Nelson, Ilkyu Ju, Sujitha Perumal" />
+      <title>JavaScript Beta: Badger Shop</title>
+      <!-- <link rel="stylesheet" href="styles.css" /> -->
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous"
+      />
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/icon.png" width="auto" height="50" alt="" />
+          </a>
+          <a class="navbar-brand" href="#">Badge Shop</a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Categories</a
+                >
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Movies, Music & Books</a>
+                  <a href="#" class="dropdown-item">Electronics</a>
+                  <a href="#" class="dropdown-item">Beauty</a>
+                  <a href="#" class="dropdown-item">Kids</a>
+                  <a href="#" class="dropdown-item">Men</a>
+                  <a href="#" class="dropdown-item">Women</a>
+                  <a href="#" class="dropdown-item">Shoes</a>
+                  <a href="#" class="dropdown-item">Gift Card</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Deals</a
+                >
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Clearance</a>
+                  <a href="#" class="dropdown-item">Weekly</a>
+                  <a href="#" class="dropdown-item">Top Deals</a>
+                  <a href="#" class="dropdown-item">Exclusives</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Services</a
+                >
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Contact</a>
+                  <a href="#" class="dropdown-item">Financial</a>
+                  <a href="#" class="dropdown-item">Health</a>
+                  <a href="#" class="dropdown-item">Community & Giving</a>
+                </div>
+              </li>
+            </ul>
 
-			<title>JavaScript Beta: Badger Shop</title>
-			<link rel="stylesheet" href="styles.css">
-		</head>
-		<body>
+            <form class="form-inline">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
 
-			<nav class="navbar navbar-expand-sm navbar-light bg-light">
-				<div class="container">
-					<a class="navbar-brand" href="#">
-						<img src="/icon.png" width="auto" height="50" alt="">
-					  </a>
-					<a class="navbar-brand" href="#">Badge Shop</a>
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contact</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-								<div class="dropdown-menu">
-									<a href="#" class="dropdown-item">Link 1</a>
-									<a href="#" class="dropdown-item">Link 2</a>
-									<a href="#" class="dropdown-item">Link 3</a>
-								</div>
-							</li>
-						</ul>
-		
-						<form class="form-inline">
-							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-						      </form>
-						  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					</div>
-				</div>
-			</nav>
-			<h2>Welcome!</h2>
-			<p>Welcome to Badger Shop! We are dedicated to bringing our customers the lowest prices on quality products.</p>
-			<br>
-			<br>
-			<br>
-			<h2>Flash Sale!</h2>
-			<p name="flashSale">5lbs of brazil nuts for just $9.99 today — we badgers love 'em!</p>
-			<br>
-			<br>
-			<br>
-			<h2>Contact Us</h2>
-			<p>Have a question? Contact us at 444.444.4321 or by emailing badgershop@wisc.com</p>
-			<br>
-			<br>
-			<br>
-			<h2>Your Account</h2>
-			<p>Name: Badger</p> 
-			<p>Email: badger@wisc.com</p>
-			<p>Phone Number: 555.555.1234</p>
-			<p style="display: inline">Subscribed to membership services: </p><p id="membershipSubscription" style="display: inline">true</p>
-			<form>
-				<button type="submit" formaction='javascript:toggleMembershipSubscription();' style="margin-top: 10px">Subscribe/Unsubscribe</button>
-			</form>
-			<br>
-			<br>
-			<br>
-			<h2>Your Orders and Subscriptions</h2>
-			
-			<h3>Order #0616803</h3>
-			<p style="display: inline">Order Placed: </p><p style="display: inline">2021-09-03T12:45:55.622Z</p>
-			<p style="display: inline">Total: </p><p style="display: inline">66.79</p>
-			<table style="margin-bottom: 10px">
-				<thead>
-					<tr>
-						<th>Brand</th>
-						<th>Product</th>
-						<th>Quantity</th>
-						<th>Price</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Badger Foods</td>
-						<td>Frozen Margherita Pizza, 10oz</td>
-						<td>1</td>
-						<td>3.99</td>
-					</tr>
-					<tr>
-						<td>Badger Foods</td>
-						<td>Madras Curry Sauce, 12.5oz</td>
-						<td>6</td>
-						<td>3.69</td>
-					</tr>
-					<tr>
-						<td>Bucky's Deli</td>
-						<td>Meatball Banh Mi</td>
-						<td>1</td>
-						<td>6.50</td>
-					</tr>
-					<tr>
-						<td>New Bublr</td>
-						<td>Pomegranate Kombucha, 16fl oz</td>
-						<td>1</td>
-						<td>3.69</td>
-					</tr>
-					<tr>
-						<td>New Bublr</td>
-						<td>Spotted Cat Beer (6-pack)</td>
-						<td>2</td>
-						<td>12.99</td>
-					</tr>
-					<tr>
-						<td>Bucky's Deli</td>
-						<td>Fried Cheese Curds</td>
-						<td>1</td>
-						<td>4.49</td>
-					</tr>
-				</tbody>
-			</table>
+            <!-- MODAL TRIGGER -->
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Account
+            </button>
+            <!-- MODAL -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- LOGIN MODAL TRIGGER -->
+                  <button
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#loginModal"
+                  >
+                    Login
+                  </button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Your Account</h5>
 
-			<h3>Order #9033042</h3>
-			<p style="display: inline">Order Placed: </p><p style="display: inline">2021-09-16T06:48:57.633Z</p>
-			<p style="display: inline">Total: </p><p style="display: inline">211.29</p>
-			<table style="margin-bottom: 10px">
-				<thead>
-					<tr>
-						<th>Brand</th>
-						<th>Product</th>
-						<th>Quantity</th>
-						<th>Price</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Boutique de Madison</td>
-						<td>High-Rise Skinny Jean (Vintage Blue)</td>
-						<td>1</td>
-						<td>50.00</td>
-					</tr>
-					<tr>
-						<td>Boutique de Madison</td>
-						<td>Lightweight French Terry Crew (Black)</td>
-						<td>1</td>
-						<td>38.99</td>
-					</tr>
-					<tr>
-						<td>Buckylemon</td>
-						<td>Performance Shorts</td>
-						<td>2</td>
-						<td>29.99</td>
-					</tr>
-					<tr>
-						<td>Bucky Outfitters</td>
-						<td>Stainless Keyring</td>
-						<td>1</td>
-						<td>9.49</td>
-					</tr>
-					<tr>
-						<td>StudyBucky</td>
-						<td>1-Subject Notebook (2-pack)</td>
-						<td>3</td>
-						<td>8.95</td>
-					</tr>
-					<tr>
-						<td>StudyBucky</td>
-						<td>Gel Pen (Medium Point, 6-pack)</td>
-						<td>2</td>
-						<td>12.99</td>
-					</tr>
-				</tbody>
-			</table>
-			
-			<h3>Manage Your Subscriptions</h3>
-			<p style="display: inline">You are currently subscribed to </p><p style="display: inline">5 subscriptions.</p>
-			<p style="display: inline">Next Automatic Payment: </p><p style="display: inline">2021-10-23T00:00:00.000Z</p>
-			<table style="margin-bottom: 10px">
-				<thead>
-					<tr>
-						<th>Service</th>
-						<th>Description</th>
-						<th>Price</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Badger Tunes</td>
-						<td>Unlimited music streaming</td>
-						<td>5.99</td>
-					</tr>
-					<tr>
-						<td>BadgerFlix</td>
-						<td>HD-quality video streaming</td>
-						<td>12.49</td>
-					</tr>
-					<tr>
-						<td>Badger Prime</td>
-						<td>Free same-day delivery of grocery items</td>
-						<td>9.99</td>
-					</tr>
-					<tr>
-						<td>Bucky's Cheese Club</td>
-						<td>Monthly delivered, curated cheeses from Wisconsin</td>
-						<td>30.00</td>
-					</tr>
-					<tr>
-						<td>Holy Cow</td>
-						<td>$10 ice cream vouchers every week</td>
-						<td>7.99</td>
-					</tr>
-				</tbody>
-			</table>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Name: Badger</p>
 
-			<br>
-			<br>
-			
-			<form method="get" action ="./account_info/order_history_report.pdf">
-				<button type="submit" style="margin-bottom: 10px">Download Order History</button>
-			</form>
-			<form method="get" action ="./account_info/subscription_invoice.pdf">
-				<button type="submit" style="margin-bottom: 10px">Download Subscription Invoice</button>
-			</form>
-			<br>
-			<br>
-			<br>
-			<h2>Your Family Plan Members</h2>
-			<table style="margin-bottom: 10px">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Email</th>
-					</tr>
-				</thead>
-					<tr>
-						<td>Goldy Golpher</td>
-						<td>goldy.gopher@example.com</td>
-					</tr>
-					<tr>
-						<td>Pioneer Pete</td>
-						<td>pioneer.pete@example.com</td>
-					</tr>
-				<tbody>
+                    <p>Email: badger@wisc.com</p>
 
-				</tbody>
-			</table>
-			<form>
-				<button type="submit" formaction='javascript:addFamilyMember();' style="margin-bottom: 10px">Add a Member</button>
-			</form>
+                    <p>Phone Number: 555.555.1234</p>
 
-			<br>
-			<br>
-			
-			<form>
-				<button type="submit" formaction='javascript:logout();' style="margin-bottom: 10px">Logout</button>
-			</form>
-			
-			<!-- FOOTER -->
-			<footer>
-				<p><a href="#">Back to top</a></p>
-			</footer>
-	</main>
-	<script src="script.js"></script>
+                    <p style="display: inline">
+                      Subscribed to membership services:
+                    </p>
+                    <p id="membershipSubscription" style="display: inline">
+                      true
+                    </p>
+                    <form>
+                      <button
+                        type="submit"
+                        formaction="javascript:toggleMembershipSubscription();"
+                        style="margin-top: 10px"
+                      >
+                        Subscribe/Unsubscribe
+                      </button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-	crossorigin="anonymous"></script>
+            <!-- LOGIN MODAL -->
+            <div class="modal" id="loginModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input
+                          type="text"
+                          placeholder="Username"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          placeholder="Password"
+                          class="form-control"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">
+                      Login
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-	</body>
+      <div class="container">
+        <!-- JUMBOTRON -->
+        <div class="jumbotron text-center">
+          <h1 class="display-8">Welcome To Badger Shop</h1>
+          <p class="lead">
+            We are dedicated to bringing our customers the lowest prices on
+            quality products.
+          </p>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+            quibusdam.
+          </p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Read More</a>
+        </div>
+      </div>
+
+      <div class="col-sm-8 m-auto">
+        <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#slider4" data-slide-to="0"></li>
+            <li data-target="#slider4" data-slide-to="1"></li>
+            <li data-target="#slider4" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block img-fluid"
+                src="https://source.unsplash.com/wgq4eit198Q/700x400"
+                alt="First Slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Welcome!</h3>
+                <p>
+                  Welcome to Badger Shop! We are dedicated to bringing our
+                  customers the lowest prices on quality products.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block img-fluid"
+                src="https://source.unsplash.com/WLUHO9A_xik/700x400"
+                alt="Second Slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Flash Sale!</h3>
+                <p>
+                  5lbs of brazil nuts for just $9.99 today — we badgers love
+                  'em!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block img-fluid"
+                src="https://source.unsplash.com/4yta6mU66dE/700x400"
+                alt="Third Slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Contact Us</h3>
+                <p>
+                  Have a question? Contact us at 444.444.4321 or by emailing
+                  badgershop@wisc.com
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTROLS -->
+          <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+
+          <a href="#slider4" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <h2>Your Orders and Subscriptions</h2>
+	  <div class="card">
+		<div class="card-header">
+			My Card
+		</div>
+		<div class="card-body">
+			<h4 class="card-title">Card Title</h4>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
+			<a class="btn btn-danger" href="#">Read More</a>
+		</div>
+	</div>
+
+	<br>
+      <h3>Order #0616803</h3>
+      <p style="display: inline">Order Placed:</p>
+      <p style="display: inline">2021-09-03T12:45:55.622Z</p>
+      <p style="display: inline">Total:</p>
+      <p style="display: inline">66.79</p>
+      <table style="margin-bottom: 10px">
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Badger Foods</td>
+            <td>Frozen Margherita Pizza, 10oz</td>
+            <td>1</td>
+            <td>3.99</td>
+          </tr>
+          <tr>
+            <td>Badger Foods</td>
+            <td>Madras Curry Sauce, 12.5oz</td>
+            <td>6</td>
+            <td>3.69</td>
+          </tr>
+          <tr>
+            <td>Bucky's Deli</td>
+            <td>Meatball Banh Mi</td>
+            <td>1</td>
+            <td>6.50</td>
+          </tr>
+          <tr>
+            <td>New Bublr</td>
+            <td>Pomegranate Kombucha, 16fl oz</td>
+            <td>1</td>
+            <td>3.69</td>
+          </tr>
+          <tr>
+            <td>New Bublr</td>
+            <td>Spotted Cat Beer (6-pack)</td>
+            <td>2</td>
+            <td>12.99</td>
+          </tr>
+          <tr>
+            <td>Bucky's Deli</td>
+            <td>Fried Cheese Curds</td>
+            <td>1</td>
+            <td>4.49</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Order #9033042</h3>
+      <p style="display: inline">Order Placed:</p>
+      <p style="display: inline">2021-09-16T06:48:57.633Z</p>
+      <p style="display: inline">Total:</p>
+      <p style="display: inline">211.29</p>
+      <table style="margin-bottom: 10px">
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Boutique de Madison</td>
+            <td>High-Rise Skinny Jean (Vintage Blue)</td>
+            <td>1</td>
+            <td>50.00</td>
+          </tr>
+          <tr>
+            <td>Boutique de Madison</td>
+            <td>Lightweight French Terry Crew (Black)</td>
+            <td>1</td>
+            <td>38.99</td>
+          </tr>
+          <tr>
+            <td>Buckylemon</td>
+            <td>Performance Shorts</td>
+            <td>2</td>
+            <td>29.99</td>
+          </tr>
+          <tr>
+            <td>Bucky Outfitters</td>
+            <td>Stainless Keyring</td>
+            <td>1</td>
+            <td>9.49</td>
+          </tr>
+          <tr>
+            <td>StudyBucky</td>
+            <td>1-Subject Notebook (2-pack)</td>
+            <td>3</td>
+            <td>8.95</td>
+          </tr>
+          <tr>
+            <td>StudyBucky</td>
+            <td>Gel Pen (Medium Point, 6-pack)</td>
+            <td>2</td>
+            <td>12.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <form method="get" action="./account_info/order_history_report.pdf">
+        <button class="btn btn-success" type="submit">
+          Download Order History
+        </button>
+      </form>
+      <br />
+
+      <h3>Manage Your Subscriptions</h3>
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Subscribed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Cancelled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Next Auto Payment:</h4>
+          <p class="card-text">2021-10-23</p>
+          <p class="card-text">
+            You are currently subscribed to 5 subscriptions.
+          </p>
+
+          <div class="modal" id="endSub">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- endSub MODAL TRIGGER -->
+
+                <div class="modal-header">
+                  <h5 class="modal-title">Cancel Subscription</h5>
+
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <h7 class="modal-title"
+                      >Are you sure you want to <b>cancel</b> your
+                      subscription?</h7
+                    >
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-light" data-dismiss="modal">
+                    CANCEL
+                  </button>
+                  <button
+                    class="btn btn-danger"
+                    data-toggle="modal"
+                    data-target="#endSub"
+                  >
+                    YES, CANCEL SUBSCRIPTION
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HOVERABLE -->
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Badger Tunes</th>
+                <td>Unlimited music streaming</td>
+                <td>5.99</td>
+                <td>
+                  <button
+                    class="btn btn-danger"
+                    data-toggle="modal"
+                    data-target="#endSub"
+                  >
+                    End Subscription
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Badger Flix</th>
+                <td>HD-quality video streaming</td>
+                <td>12.49</td>
+                <td>
+                  <button
+                    class="btn btn-danger"
+                    data-toggle="modal"
+                    data-target="#endSub"
+                  >
+                    End Subscription
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Badger Prime</th>
+                <td>Free same-day delivery of grocery items</td>
+                <td>9.99</td>
+                <td>
+                  <button
+                    class="btn btn-danger"
+                    data-toggle="modal"
+                    data-target="#endSub"
+                  >
+                    End Subscription
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Bucky's Cheese Club</th>
+                <td>Monthly delivered, curated cheeses from Wisconsin</td>
+                <td>30.00</td>
+                <td>
+                  <button
+                    class="btn btn-danger"
+                    data-toggle="modal"
+                    data-target="#endSub"
+                  >
+                    End Subscription
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Holy Cow</th>
+                <td>$10 ice cream vouchers every week</td>
+                <td>7.99</td>
+                <td>
+                  <button
+                    class="btn btn-danger"
+                    data-toggle="modal"
+                    data-target="#endSub"
+                  >
+                    End Subscription
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br />
+      <form method="get" action="./account_info/subscription_invoice.pdf">
+        <button class="btn btn-success" type="submit">
+          Download Subscription Invoice
+        </button>
+      </form>
+      <br />
+      <br />
+      <br />
+      <h2>Your Family Plan Members</h2>
+      <table style="margin-bottom: 10px">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Goldy Golpher</td>
+          <td>goldy.gopher@example.com</td>
+        </tr>
+        <tr>
+          <td>Pioneer Pete</td>
+          <td>pioneer.pete@example.com</td>
+        </tr>
+        <tbody></tbody>
+      </table>
+      <form>
+        <button
+          type="submit"
+          formaction="javascript:addFamilyMember();"
+          class="btn btn-success"
+        >
+          Add a Member
+        </button>
+      </form>
+      <br />
+      <form>
+        <button
+          type="submit"
+          formaction="javascript:logout();"
+          class="btn btn-dark"
+          data-toggle="modal"
+          data-target="#logoutModal"
+        >
+          Logout
+        </button>
+      </form>
+      <br />
+
+      <div class="modal" id="logoutModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="card" style="width: 20rem">
+              <div class="card-body">
+                <h4 class="card-title">Logout</h4>
+                <h6 class="card-subtitle text-muted">Thank you</h6>
+                <p class="card-text">
+                  You have been logged out of the system. Please close out of
+                  all tabs.
+                </p>
+                <button class="btn btn-primary" data-dismiss="modal">
+                  close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a class="btn btn-dark btn-block" href="#">Back to top</a>
+      </footer>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Fluid Jumbotron</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            recusandae voluptatibus, natus architecto asperiores a.
+          </p>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <script src="script.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </main>
 </html>
