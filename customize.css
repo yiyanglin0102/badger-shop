@@ -34,7 +34,3 @@ nav {
   background-color: rgba(38, 62, 57, 1);
   padding: 1em inherit;
 }
-
-.form-control:focus {
-  box-shadow: none;
-}
